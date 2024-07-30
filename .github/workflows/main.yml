@@ -175,6 +175,11 @@ jobs:
           CROSS_COMPILE_ARM32=arm-linux-gnueabi-
           " | tee -a $GITHUB_ENV
 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+         python-version: 2.7
+         
       - name: Make defconfig
         run: |
           make $flags merged_defconfig
