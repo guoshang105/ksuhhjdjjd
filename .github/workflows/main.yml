@@ -1,12 +1,12 @@
 name: Check and Build
 
 env:
-  kernel_repository: PixelExperience-Devices/kernel_xiaomi_sdm845
-  kernel_branch: fourteen
-  device: dipper
-  clang_version: r487747c
+  kernel_repository: Rohail33/Realking_kernel_sm8250
+  kernel_branch: main
+  device: apollo
+  clang_version: r416183b
   defconfig: |
-    dipper_defconfig
+    apollo_defconfig
   kernel_patch: |
     backport-path-umount.patch
   kernelsu_patch: |
