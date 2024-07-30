@@ -4,7 +4,7 @@ env:
   kernel_repository: Rohail33/Realking_kernel_sm8250
   kernel_branch: main
   device: apollo
-  clang_version: 19
+  clang_version: 17
   defconfig: |
     apollo_defconfig
   kernel_patch: |
